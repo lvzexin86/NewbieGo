@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HomeActivity">
+
+    <include layout="@layout/item_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <edu.feicui.app.phone.view.GroundArc
+                    android:id="@+id/lead_cus_viewset1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <edu.feicui.app.phone.view.GroundArc
+                    android:id="@+id/lead_cus_viewset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <edu.feicui.app.phone.view.GroundArc
+                    android:id="@+id/lead_cus_viewset2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/lead_txt_rocket"
+                            style="@style/LeadTxt"
+                            android:drawableTop="@mipmap/icon_rocket"
+                            android:text="@string/lead_txt_rocket" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/lead_txt_softmgr"
+                            style="@style/LeadTxt"
+                            android:drawableTop="@mipmap/icon_softmgr"
+                            android:text="@string/lead_txt_softMgr" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/lead_txt_phonemgr"
+                            style="@style/LeadTxt"
+                            android:drawableTop="@mipmap/icon_phonemgr"
+                            android:text="@string/lead_txt_phoneMgr" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/lead_txt_telmgr"
+                            style="@style/LeadTxt"
+                            android:drawableTop="@mipmap/icon_telmgr"
+                            android:text="@string/lead_txt_telMgr" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/lead_txt_filemgr"
+                            style="@style/LeadTxt"
+                            android:drawableTop="@mipmap/icon_filemgr"
+                            android:text="@string/lead_txt_fileMgr" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/lead_txt_sdclean"
+                            style="@style/LeadTxt"
+                            android:drawableTop="@mipmap/icon_sdclean"
+                            android:text="@string/lead_txt_sdClean" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LeadActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="right"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/yindao_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_weight="10"
+        android:id="@+id/yindao_vpg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/yindao_pts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v4.view.PagerTitleStrip>
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="3">
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@mipmap/adware_style_selected"
+                    android:id="@+id/yindao_switch1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@mipmap/adware_style_default"
+                    android:id="@+id/yindao_switch2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@mipmap/adware_style_default"
+                    android:id="@+id/yindao_switch3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

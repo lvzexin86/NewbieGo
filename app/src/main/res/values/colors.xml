@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorFrame">#cfcfcf</color>
+    <color name="progressbar">#8B3E2F</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="action_background">#303537</color>
+    <color name="accelerate">#336699</color>
+    <color name="smooth">#008000</color>
+    <color name="good">#808000</color>
+    <color name="notEnoughStorage">#8B3E2F</color>
+    <color name="red">#990000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

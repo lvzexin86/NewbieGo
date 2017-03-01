@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_margin_little">5dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="activity_horizontal_margin_big">20dp</dimen>
+    <dimen name="activity_vertical_margin_big">20dp</dimen>
+    <dimen name="layout_lead_Fontssize">20sp</dimen>
+    <dimen name="bigword">30sp</dimen>
+    <dimen name="actionbar_size">45dp</dimen>
+    <dimen name="littleWord">20sp</dimen>
+    <dimen name="muchLittleWord">10sp</dimen>
+</resources>

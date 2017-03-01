@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.feicui.app.phone.activity.SoftListActivity">
+    <include layout="@layout/item_toolbar"/>
+    <ListView
+        android:layout_weight="8"
+        android:id="@+id/lst_appList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </ListView>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:id="@+id/Rel_softList_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/ckb_softList_deleteAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_soft_list_deleteSelected"
+            android:layout_toRightOf="@+id/ckb_softList_deleteAll"
+            android:text="@string/delete_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

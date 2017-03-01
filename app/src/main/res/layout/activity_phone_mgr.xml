@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.feicui.app.phone.activity.PhoneMgrActivity">
+
+    <include layout="@layout/item_toolbar"/>
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ProgressBar
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:id="@+id/pgb_phone_batteryPower"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:progress="95"
+            android:background="@mipmap/background"
+            android:padding="14dp"
+            android:progressDrawable="@drawable/progress_battery" />
+        <TextView
+            android:id="@+id/txt_phone_batteryPower"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/pgb_phone_batteryPower"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/img_phoneMgr_version"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/notification_information_progress_green"
+            android:src="@drawable/setting_info_icon_version"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_phoneName"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="设备名称："
+            android:layout_toRightOf="@id/img_phoneMgr_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_SystemVersion"
+            android:layout_toRightOf="@id/img_phoneMgr_version"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统版本："/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/img_phoneMgr_space"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/notification_information_progress_red"
+            android:src="@drawable/setting_info_icon_space"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_memory"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="全部运行内存："
+            android:layout_toRightOf="@id/img_phoneMgr_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_memoryFree"
+            android:layout_toRightOf="@id/img_phoneMgr_space"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余运行内存："/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/img_phoneMgr_cpu"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/notification_information_progress_yellow"
+            android:src="@drawable/setting_info_icon_cpu"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_cpuName"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="cpu名称："
+            android:layout_toRightOf="@id/img_phoneMgr_cpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_cpuCount"
+            android:layout_toRightOf="@id/img_phoneMgr_cpu"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cpu核心数："/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/img_phoneMgr_camera"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/notification_information_progress_green"
+            android:src="@drawable/setting_info_icon_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_phoneResolution"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="手机分辨率："
+            android:layout_toRightOf="@id/img_phoneMgr_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_cameraResolution"
+            android:layout_toRightOf="@id/img_phoneMgr_camera"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相机最大分辨率："/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/img_phoneMgr_root"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/notification_information_progress_red"
+            android:src="@drawable/setting_info_icon_root"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_baseBandVersion"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:text="基带版本："
+            android:layout_toRightOf="@id/img_phoneMgr_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_phoneMgr_hasNotRoot"
+            android:layout_toRightOf="@id/img_phoneMgr_root"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否Root："/>
+
+    </RelativeLayout>
+
+</LinearLayout>

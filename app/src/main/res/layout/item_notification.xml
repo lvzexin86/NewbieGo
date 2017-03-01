@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/action_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_notification_esc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/xxx"/>
+    <ImageView
+        android:id="@+id/img_notification_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:layout_toRightOf="@+id/img_notification_logo"
+        android:id="@+id/txt_notification_music_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="She is my sin"
+        android:textColor="@color/colorFrame" />
+    <TextView
+        android:layout_toRightOf="@+id/img_notification_logo"
+        android:id="@+id/txt_notification_musicer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_notification_music_name"
+        android:text="Nightwish"
+        android:textColor="@color/colorFrame" />
+    <LinearLayout
+        android:layout_below="@+id/img_notification_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_notification_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/stop" />
+        <ImageView
+            android:id="@+id/img_notification_play"
+            android:layout_toRightOf="@+id/img_notification_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pause" />
+        <ImageView
+            android:layout_toRightOf="@+id/img_notification_play"
+            android:id="@+id/img_notification_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/next" />
+        <ProgressBar
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/img_notification_next"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progress_2"
+            android:id="@+id/pgb_notification"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

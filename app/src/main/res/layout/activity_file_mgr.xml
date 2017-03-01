@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FileMgrActivity">
+
+    <include layout="@layout/item_toolbar"/>
+    <LinearLayout
+        android:layout_weight="2"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignBottom="@+id/txt_fileMgr_hasFind"
+                android:id="@+id/txt_fileMgr_hasFind_flag"
+                android:textColor="@color/white"
+                android:text="已发现"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@+id/txt_fileMgr_hasFind_flag"
+                android:id="@+id/txt_fileMgr_hasFind"
+                android:text="0B"
+                android:visibility="invisible"
+                android:textSize="50sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ProgressBar
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignBottom="@+id/txt_fileMgr_hasFind"
+                android:progressDrawable="@drawable/progress_hasfind"
+                android:id="@+id/pgb_fileMgr_hasFind"
+                android:layout_toRightOf="@+id/txt_fileMgr_hasFind_flag"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rel_fileMgr_all"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="@string/fileMgr_all"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/txt_fileMgr_flag_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_fileMgr_all"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_all"
+            android:text="0b"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:id="@+id/pgb_fileMgr_all"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_all"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_fileMgr_txt"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="@string/fileMgr_txt"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/txt_fileMgr_flag_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_fileMgr_txt"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_txt"
+            android:text="0b"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:id="@+id/pgb_fileMgr_txt"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_txt"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_fileMgr_video"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="@string/fileMgr_video"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/txt_fileMgr_flag_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_fileMgr_video"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_video"
+            android:text="0b"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:id="@+id/pgb_fileMgr_video"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_video"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_fileMgr_mp3"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="@string/fileMgr_mp3"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/txt_fileMgr_flag_mp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_fileMgr_mp3"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_mp3"
+            android:text="0b"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:id="@+id/pgb_fileMgr_mp3"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_mp3"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_fileMgr_img"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="@string/fileMgr_img"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/txt_fileMgr_flag_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_fileMgr_img"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_img"
+            android:text="0b"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:id="@+id/pgb_fileMgr_img"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_img"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_fileMgr_zip"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="@string/fileMgr_zip"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/txt_fileMgr_flag_zip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_fileMgr_zip"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_zip"
+            android:text="0b"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:id="@+id/pgb_fileMgr_zip"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_zip"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_fileMgr_apk"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="@string/fileMgr_apk"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/txt_fileMgr_flag_apk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_fileMgr_apk"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_apk"
+            android:text="0b"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:id="@+id/pgb_fileMgr_apk"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@+id/txt_fileMgr_flag_apk"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.feicui.app.phone">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".base.MyBaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activity.LogoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.TelMgrActivity"
+            android:label="@string/lead_txt_telMgr"
+            android:launchMode="standard" />
+        <activity android:name=".activity.TelListActivity"
+            android:launchMode="standard"/>
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:label="@string/config_about"
+            android:launchMode="standard" />
+        <activity android:name=".activity.LeadActivity" />
+        <activity android:name=".activity.PlayerActivity"
+            android:label="@string/title_music"
+            android:launchMode="singleTask" />
+
+        <service android:name=".service.MusicService" />
+
+        <activity
+            android:name=".activity.ConfigActivity"
+            android:label="@string/config"
+            android:launchMode="standard" />
+        <activity
+            android:name=".activity.SoftMgrActivity"
+            android:label="@string/lead_txt_softMgr"
+            android:launchMode="standard" />
+        <activity
+            android:name=".activity.SoftListActivity"
+            android:launchMode="standard" />
+        <activity
+            android:name=".activity.PhoneMgrActivity"
+            android:label="@string/lead_txt_phoneMgr"
+            android:launchMode="standard" />
+        <activity
+            android:name=".activity.FileMgrActivity"
+            android:label="@string/lead_txt_fileMgr"
+            android:launchMode="standard" />
+        <activity android:name=".activity.FileListActivity"
+            android:launchMode="standard"/>
+    </application>
+
+</manifest>

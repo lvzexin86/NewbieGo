@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.feicui.app.phone.activity.ConfigActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/layout_lead_Fontssize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_open"/>
+        <ToggleButton
+            android:id="@+id/tgb_config_open"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/customswitch"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/layout_lead_Fontssize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_notification"/>
+        <ToggleButton
+            android:id="@+id/tgb_config_notifi"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/customswitch"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/layout_lead_Fontssize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_newsSend"/>
+        <ToggleButton
+            android:id="@+id/tgb_config_news"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/customswitch"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_config_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/layout_lead_Fontssize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_help"/>
+        <ImageView
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_config_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/layout_lead_Fontssize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_opinion"/>
+        <ImageView
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_config_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/layout_lead_Fontssize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_share"/>
+        <ImageView
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_config_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/layout_lead_Fontssize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_version"/>
+        <ImageView
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_config_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:textSize="@dimen/layout_lead_Fontssize"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config_about"/>
+        <ImageView
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_arrows_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

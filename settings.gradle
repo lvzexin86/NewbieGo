@@ -1,0 +1,1 @@
+include ':app', ':serviceapp', ':myapplication', ':news', ':tryapplication', ':SlidingMenu-master'

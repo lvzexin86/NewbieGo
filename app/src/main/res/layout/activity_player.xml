@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.feicui.app.phone.activity.PlayerActivity">
+
+    <include layout="@layout/item_toolbar"/>
+    <TextView
+        android:id="@+id/txt_player_title"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/pgb_player_load"
+        android:text="正在加载音乐列表……"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:layout_above="@+id/lin_player_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pgb_player_load"
+        android:visibility="visible"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:id="@+id/lin_player_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:visibility="invisible"
+            android:id="@+id/btn_playerActivity_skb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/btn_playerActivity_play"
+                android:text="Play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/btn_playerActivity_stop"
+                android:text="Stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_playerActivity_next"
+                android:text="Next"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

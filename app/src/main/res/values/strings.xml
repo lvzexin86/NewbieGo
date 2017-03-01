@@ -1,0 +1,42 @@
+<resources>
+    <string name="version">v1.0.0</string>
+    <string name="app_name">安卓管家</string>
+
+    <string name="config">配置设置</string>
+    <string name="config_open">开机选项</string>
+    <string name="config_notification">通知图标</string>
+    <string name="config_newsSend">消息推送</string>
+    <string name="config_help">帮助说明</string>
+    <string name="config_opinion">意见反馈</string>
+    <string name="config_share">好友分享</string>
+    <string name="config_version">版本更新</string>
+    <string name="config_about">关于我们</string>
+
+    <string name="title_music">音乐播放</string>
+
+    <string name="lead_txt_rocket">手机加速</string>
+    <string name="lead_txt_softMgr">软件管理</string>
+    <string name="lead_txt_phoneMgr">手机检测</string>
+    <string name="lead_txt_telMgr">通讯大全</string>
+    <string name="lead_txt_fileMgr">文件管理</string>
+    <string name="lead_txt_sdClean">垃圾清理</string>
+
+    <string name="scrollview_allApplication">所有应用</string>
+    <string name="scrollview_systemApplication">系统应用</string>
+    <string name="scrollview_userApplication">用户应用</string>
+    <string name="storage_natural">手机内置存储</string>
+    <string name="storage_external">手机外置存储</string>
+    <string name="delete_select">删除所选的应用</string>
+    <string name="delete_selectFile">删除所选的文件</string>
+
+    <string name="fileMgr_all">全部文件</string>
+    <string name="fileMgr_txt">文档文件</string>
+    <string name="fileMgr_video">视频文件</string>
+    <string name="fileMgr_mp3">音频文件</string>
+    <string name="fileMgr_img">图像文件</string>
+    <string name="fileMgr_zip">压缩包</string>
+    <string name="fileMgr_apk">安装包</string>
+
+    <string name="fileList_fileCount">文件数量:</string>
+    <string name="fileList_fileSpace">占用空间:</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/ckb_appList_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+    <ImageView
+        android:id="@+id/img_appList_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/ckb_appList_check"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txt_appList_appName"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@+id/img_appList_icon"
+        android:text="应用名"
+        android:textSize="@dimen/littleWord" />
+
+    <TextView
+        android:id="@+id/txt_appList_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/activity_margin_little"
+        android:layout_marginTop="@dimen/activity_margin_little"
+        android:text="4.3-8987545"
+        android:textSize="@dimen/muchLittleWord" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorFrame" />
+</RelativeLayout>
