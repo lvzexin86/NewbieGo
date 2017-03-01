@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends FragmentActivity {
@@ -15,7 +16,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         con = this;
         setContentView(R.layout.activity_main);
-//        Button btn= (Button) findViewById(R.id.btn1);
+        Button btn= (Button) findViewById(R.id.btn1);
 //        t = getSupportFragmentManager().beginTransaction();
 //        rel= (RelativeLayout) findViewById(R.id.lin);
 //        btn.setOnClickListener(new View.OnClickListener() {
