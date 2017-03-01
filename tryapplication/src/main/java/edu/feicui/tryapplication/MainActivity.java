@@ -17,7 +17,7 @@ public class MainActivity extends FragmentActivity {
         con = this;
         setContentView(R.layout.activity_main);
         Button btn= (Button) findViewById(R.id.btn1);
-//        t = getSupportFragmentManager().beginTransaction();
+        t = getSupportFragmentManager().beginTransaction();
 //        rel= (RelativeLayout) findViewById(R.id.lin);
 //        btn.setOnClickListener(new View.OnClickListener() {
 //            @Override
